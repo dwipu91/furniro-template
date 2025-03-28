@@ -1,0 +1,89 @@
+.show-pages {
+  text-align: center;
+  margin: 2rem 0;
+}
+.show-page {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 10px;
+}
+.active-btn {
+  background: var(--color-text);
+  color: white;
+}
+.shop-banner {
+  background: url(image/Rectangle\ 1.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.shop-banner h1 {
+  font-size: 2rem;
+}
+
+.shop-search {
+  background: var(--regular-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+.shop-search-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.shop-search-item div {
+  padding: 0 0.5rem;
+  /* margin: 3rem; */
+}
+.filter i {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+.shop-search-item div:first-child {
+  border-right: 1px solid black;
+}
+.shop-show {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.show {
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  display: inline-block;
+  background: white;
+  color: var(--bg-hover);
+}
+
+/* high css  */
+.high {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0;
+  background: var(---banner-bg);
+}
+.high-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.high-item h4 {
+  font-size: 1rem;
+}

@@ -1,0 +1,204 @@
+.navigation-bar-direction {
+  padding: 2rem;
+  background: var(---banner-bg);
+}
+.navigation-bar-direction span {
+  color: gray;
+  padding: 1rem 2rem;
+}
+
+#asgaard-sofa {
+  border-left: 0.15rem solid gray;
+  margin: 0 2rem;
+  color: black;
+}
+
+/* details css start */
+.details-header {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.details-header h3 {
+  font-weight: 600;
+  color: black;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.details-header h3:not(:first-child) {
+  color: gray;
+}
+.details p {
+  padding: 2rem 0;
+  color: gray;
+  font-size: 0.8rem;
+  width: 80%;
+  margin: auto;
+}
+
+.details-imsge {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.details-imsge img {
+  background: var(---banner-bg);
+  border-radius: 1rem;
+}
+/* details css end */
+
+/*  */
+/*  */
+.single-product {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 3rem;
+}
+.single-product-image {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.single-product-image img {
+  background: var(---banner-bg);
+  border-radius: 1rem;
+}
+.image-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.image-icon img {
+  height: 4rem;
+  width: 4rem;
+  background: var(---banner-bg);
+  border-radius: 1rem;
+}
+.single-product-rate {
+  flex: 1;
+}
+
+.single-product-rate {
+  padding: 0 3rem;
+}
+.single-product-rate h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+}
+.prise-tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.single-page-color-p {
+  padding-top: 2rem;
+}
+.single-page-color-p li {
+  color: gray;
+}
+.single-page-color-p li span {
+  color: gray;
+}
+
+.single-product-rate p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+}
+.single-product-rate span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+  margin-bottom: 1rem;
+  color: var(--bg-hover);
+}
+.single-product-rate h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+.single-product-rate .single-page-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.single-page-count {
+  flex: 1;
+  display: flex;
+  gap: 0.1rem;
+  border: 1px solid rgb(218, 208, 208);
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+.single-page-count button {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0.2rem 1rem;
+}
+.single-page-btn .btn-card {
+  flex: 1;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  background: none;
+  cursor: pointer;
+  border: 1px solid var(--bg-hover);
+}
+
+.single-page-icon i {
+  color: black;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.category li {
+  padding: 0.5rem 0;
+}
+.color p {
+  color: var(--bg-hover);
+  padding-top: 2rem;
+}
+.color p {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+.color span {
+  height: 1rem;
+  width: 1rem;
+  padding: 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.yellow {
+  background: yellow;
+}
+.tomato {
+  background: tomato;
+}

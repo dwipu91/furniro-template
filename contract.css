@@ -1,0 +1,61 @@
+.get-in-text {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.get-in-text h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.get-in-text p {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+.get-in-location {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+.address {
+  flex: 1;
+}
+.user-contract {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.user-contract i {
+  font-size: 2rem;
+}
+.user-contract div h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.tack-userdata {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 4rem;
+}
+.tack-userdata label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.tack-userdata input {
+  padding: 1rem;
+}
+.tack-userdata input[type="text"],
+.tack-userdata textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.tack-userdata textarea {
+  resize: vertical;
+  min-height: 6rem;
+  padding: 1rem;
+}

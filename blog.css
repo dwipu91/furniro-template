@@ -1,0 +1,102 @@
+.blog-section {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.blog-item {
+  flex: 2;
+}
+.blog-itmes {
+  margin-bottom: 2.5rem;
+}
+.blog-itmes p {
+  padding: 1rem 0;
+}
+.blog-itmes img {
+  padding-bottom: 2rem;
+}
+.blog-itmes p i {
+  padding-right: 1rem;
+  font-weight: 400;
+}
+.blog-itmes p span {
+  padding-right: 1rem;
+}
+.blog-categories {
+  flex: 1;
+}
+
+.blog-itmes h3 {
+  font-size: 2rem;
+}
+.blog-itmes p {
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+.blog-itmes button {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+.blog-categories .search button {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: 0.05rem solid var(--bg-hover);
+}
+.blog-categories .search input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.category-item {
+  margin-bottom: 3rem;
+}
+
+.category-item h5 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+.category-item p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+.category-item p span {
+  color: gray;
+}
+
+.recent-post {
+  padding: 2rem 0;
+}
+.recent-post h5 {
+  font-size: 1.5rem;
+}
+
+.recent-post-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.recent-post-item img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+
+.recent-post-item div h6 {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+.recent-post-item div p {
+  font-size: 0.8rem;
+}

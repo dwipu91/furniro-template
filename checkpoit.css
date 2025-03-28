@@ -1,0 +1,129 @@
+.billing-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.billing-category {
+  flex: 1;
+}
+
+.billing-category h3 {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.checkpoint-name {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.checkpoint-name p {
+  flex: 1;
+}
+.checkpoint-name input {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--btn-border);
+}
+.checkpoint-address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.checkpoint-address input {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--btn-border);
+}
+.checkpoint-address p {
+  padding: 1rem 0;
+}
+
+.product-bill {
+  margin-bottom: 3rem;
+}
+.product-bill h5 strong {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.product-bill p span {
+  font-size: 1rem;
+}
+.prement {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.prement p {
+  padding: 1rem 0;
+}
+.prement .prement-text {
+  color: var(--bg-hover);
+  font-size: 0.8rem;
+}
+#total {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#dot {
+  height: 1rem;
+  width: 1rem;
+  background: black;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+#dot-dot {
+  height: 1rem;
+  width: 1rem;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.prement-checkpout {
+  margin-left: 1rem;
+  padding: 0.5rem 0;
+}
+.prement-checkpout li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.prement-btn {
+  margin: auto;
+}
+.prement-btn button {
+  padding: 0.7rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: transparent;
+  border: 1px solid var(--btn-border);
+}
+
+.product-bill {
+  margin-bottom: 3rem;
+}
+.product-bill h5,
+.product-bill p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.product-bill h5 strong {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.product-bill p span {
+  font-size: 1rem;
+}

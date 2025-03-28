@@ -1,0 +1,423 @@
+/* Header css start */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  list-style: none;
+  margin: 0;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: var(--color-text);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.icon i {
+  color: #333333;
+  transition: color 0.3s ease;
+}
+.icon i:hover {
+  color: var(--color-text);
+}
+
+/* Header css end */
+
+/* banner  css start*/
+.banner-bg {
+  background-image: url(image/scandinavian-interior-mockup-wall-decal-background\ 1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.banner-text {
+  flex: 1;
+}
+.banner-text strong {
+  font-size: 0.8rem;
+  color: #333333;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+.banner-text h1 {
+  font-size: 3rem;
+  color: var(--color-text);
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+}
+.text-bg {
+  background: var(---banner-bg);
+  padding: 2rem;
+}
+.banner-text p {
+  font-size: 0.8rem;
+  color: #333333;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+/* banner  css end*/
+
+/* range css start */
+.range {
+  text-align: center;
+  padding: 2rem 0;
+}
+.range h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.range p {
+  font-size: 0.8rem;
+  color: var(--black);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.range-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.item {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.item img {
+  width: 20rem;
+  height: 26rem;
+}
+.item p {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+/* range css end */
+
+/* product css start */
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.product-item {
+  background: var(--grey);
+
+  position: relative;
+}
+
+.range-hover {
+  opacity: 0;
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+.product-text {
+  padding: 1rem;
+}
+.product-text h4 {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.product-text p {
+  font-size: 0.7rem;
+  color: var(--black);
+  opacity: 0.8;
+}
+.range-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.product-item:hover .range-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-hover);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+.new {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.range-share {
+  display: flex;
+  padding: 1rem 0;
+  gap: 0.8rem;
+}
+.range-share p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--white);
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.range-share p i {
+  font-size: 0.8rem;
+  color: var(--white);
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.show {
+  text-align: center;
+  margin: 1rem 0;
+}
+.show-btn {
+  border: 0.1rem solid var(--color-text);
+  color: var(--color-text);
+  padding: 1rem 3.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* product css end */
+
+/* rooms css start */
+.rooms {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: var(---banner-bg);
+  padding: 3rem 0;
+}
+.rooms-text {
+  display: flex;
+  padding: 0 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.rooms-text h2 {
+  font-size: 2rem;
+  color: var(--color-text);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.rooms-text p {
+  font-size: 0.8rem;
+  color: var(--bg-hover);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.rooms-img,
+.rooms-img-dote {
+  display: flex;
+  gap: 1rem;
+}
+.rooms-img-dote {
+  display: flex;
+  flex-direction: column;
+}
+.rooms-img-dote-s {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+.rooms-img-dote-s .rooms-img-dote-img {
+  display: inline-block;
+  width: 21rem;
+  height: 30rem;
+}
+.rooms-img-dote-p {
+  display: inline-block;
+  height: 1rem;
+  width: 0.9rem;
+  background: var(--bg-hover);
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+/* rooms css end */
+
+/* share css start */
+.share {
+  padding: 3rem 0;
+}
+
+.share-text {
+  text-align: center;
+  line-height: 1rem;
+}
+.share h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.share p {
+  font-size: 0.9rem;
+  color: var(--bg-hover);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.share-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  overflow: hidden;
+  margin: 3rem 0;
+}
+.share-image-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.share-image-item-one {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+.top-one {
+  height: 16rem;
+  width: 12rem;
+}
+.share-image-item-center img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* share css end */
+
+/* footer css start    */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 2rem 0;
+}
+
+.footer-icon h2 {
+  margin-bottom: 2rem;
+}
+.footer-icon h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  color: var(--bg-hover);
+}
+.footer-icon p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.footer-icon p span {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--bg-hover);
+}
+.footer-icon p .footer-input {
+  border: none;
+  border-bottom: 1px solid var(--bg-hover);
+  padding: 0.5rem 0;
+  outline: none;
+}
+/* footer css end    */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

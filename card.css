@@ -1,0 +1,70 @@
+.single-page-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  gap: 1rem;
+}
+.card-table {
+  flex: 2;
+}
+
+.card-table {
+  padding: 2rem 0;
+}
+.card-table table thead,
+.card-table table tbody {
+}
+.card-table table thead th {
+  background: var(---banner-bg);
+}
+.card-table table tbody td,
+.card-table table thead th {
+  padding: 2rem;
+  text-align: center;
+}
+.card-table table tbody td img {
+  height: 6rem;
+  width: 6rem;
+  background: var(---banner-bg);
+  padding: 0.2rem;
+}
+
+.card-count button {
+  padding: 0.3rem 0.8rem;
+  background: white;
+  border: 1px solid var(--bg-hover);
+  border-radius: 0.3rem;
+}
+
+.card-totals {
+  flex: 1;
+  padding: 1rem;
+  background: var(---banner-bg);
+  text-align: center;
+}
+.card-totals h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.card-totals p {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 0.1rem 0;
+}
+.card-totals span {
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+.card-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  border-color: var(--bg-hover);
+}
