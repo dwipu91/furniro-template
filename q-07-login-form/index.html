@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(widescreen-tree-landscape.jpg);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      header div {
+        flex-direction: column;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        padding: 2rem;
+        border-radius: 1rem;
+      }
+      input {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        margin: 1rem 0;
+        width: 100%;
+        outline: transparent;
+        font-size: 1rem;
+      }
+
+      article {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        gap: 1rem;
+        background: transparent;
+        cursor: pointer;
+      }
+      button {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 1rem;
+        width: 100%;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        background: transparent;
+        color: aliceblue;
+        background: #20202050;
+
+        transition: all 0.3s ease-in-out;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+        color: aquamarine;
+        font-weight: bold;
+      }
+      button:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: #fff;
+        border: 1px solid transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <input type="text" placeholder="Username / Email" />
+        <input placeholder="Password" type="password" />
+        <button type="submit" class="btn">Login</button>
+        <p>or</p>
+        <article>
+          <button class="btn">
+            <i class="fab fa-facebook" aria-hidden="true"></i>Facebook
+          </button>
+          <button class="btn">
+            <i class="fab fa-google" aria-hidden="true"></i> Google
+          </button>
+        </article>
+      </div>
+    </header>
+  </body>
+</html>
