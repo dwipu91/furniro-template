@@ -352,11 +352,16 @@ header {
   align-items: flex-end;
   gap: 1rem;
 }
+.share-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .shear-image-top {
   align-items: flex-start;
 }
 #--image-4 {
-  height: 16rem;
+  height: 36rem;
   width: 100%;
 }
 #--image-4 {

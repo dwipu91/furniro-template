@@ -15,11 +15,15 @@
       :root {
         --primary-color: #121111;
         --secondary-color: #3e3e3dad;
+        --secondary-color-dote: #7c7c7b;
         --tertiary-color: #f1f1f1;
         --quaternary-color: #e5e5e5;
         --btn-blue: blue;
         --btn-green: green;
         --btn-red: red;
+        --bg-one: #00d8d6;
+        --bg-two: #ff6b6b;
+        --bg-three: #0be881;
       }
       * {
         margin: 0;
@@ -40,13 +44,16 @@
         height: 100vh;
         padding: 10rem;
         color: white;
+        overflow: hidden;
       }
       .container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
-        gap: 10rem;
+        gap: 5rem;
+
+        position: relative;
       }
       .box-one {
         display: flex;
@@ -54,8 +61,21 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 1rem;
-
         color: var(--quaternary-color);
+        background: var(--secondary-color-dote);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+
+        position: relative;
+        overflow: hidden;
+      }
+      #play {
+        position: absolute;
+        top: 0.5rem;
+        left: -1.9rem;
+        font-size: 4rem;
+        color: var(--secondary-color-dote);
       }
       button {
         background-color: var(--primary-color);
@@ -63,20 +83,68 @@
         border: 1px solid var(--tertiary-color);
         padding: 0.2rem;
         border: none;
-        cursor: pointer;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
       }
-      button:hover {
-        background-color: var(--tertiary-color);
-        color: var(--primary-color);
-      }
+
       .box-icon i {
         font-size: 10rem;
         color: var(--quaternary-color);
         font-size: 5rem;
       }
-      .box-one i {
+      /* .box-one i {
         transform: rotate(180deg);
         font-size: 2rem;
+      } */
+      #margin-line {
+        position: absolute;
+        height: 100vh;
+        width: 0.15rem;
+        background: var(--quaternary-color);
+        top: 0;
+        left: 2.4rem;
+        z-index: -1;
+      }
+      /* .box-one a i {
+        transform: rotate(0deg);
+      } */
+      button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        cursor: pointer;
+      }
+      #primary {
+        background: var(--bg-one);
+        color: var(--primary-color);
+      }
+      #fast {
+        color: var(--bg-one);
+      }
+      #second {
+        color: var(--bg-two);
+      }
+      #third {
+        color: var(--bg-three);
+      }
+      #secondary {
+        background: var(--bg-two);
+      }
+      #tertiary {
+        background: var(--bg-three);
+        color: blue;
+      }
+      a {
+        text-decoration: none;
+        color: beige;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.3rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-bottom: 0.6rem solid transparent;
       }
     </style>
   </head>
@@ -84,24 +152,57 @@
     <section>
       <div class="container">
         <div class="box-icon">
-          <i class="fa fa-smile" aria-hidden="true"></i>
+          <i id="fast" class="fa fa-smile" aria-hidden="true"></i>
         </div>
+        <div id="margin-line"></div>
         <div class="box-one">
-          <button>primary</button>
+          <button id="primary">primary</button>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
             incidunt eligendi omnis sint maiores nemo repellat architecto
             dolorum iste adipisci officiis expedita officia suscipit consectetur
-            amet quibusdam aperiam! Dolorem, harum? Quam tempora ratione
-            perferendis atque illum? Ea aut libero iste? Aut laborum
-            accusantium, quisquam deserunt aliquam quae mollitia beatae minus et
-            officiis adipisci maiores natus voluptatum iure praesentium sunt
-            sapiente.
+            amet quibusdam aperiam! Dolorem, harum? sapiente.
           </p>
           <a href="#"
             >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
           ></a>
-          <i class="fa-solid fa-play"></i>
+          <i id="play" class="fa-solid fa-play"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box-icon">
+          <i id="second" class="fa fa-smile" aria-hidden="true"></i>
+        </div>
+        <div class="box-one">
+          <button id="secondary">secondary</button>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            incidunt eligendi omnis sint maiores nemo repellat architecto
+            dolorum iste adipisci officiis expedita officia suscipit consectetur
+            amet quibusdam aperiam! Dolorem, harum? sapiente.
+          </p>
+          <a href="#"
+            >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+          ></a>
+          <i id="play" class="fa-solid fa-play"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box-icon">
+          <i id="third" class="fa fa-smile" aria-hidden="true"></i>
+        </div>
+        <div class="box-one">
+          <button id="tertiary">tertiary</button>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            incidunt eligendi omnis sint maiores nemo repellat architecto
+            dolorum iste adipisci officiis expedita officia suscipit consectetur
+            amet quibusdam aperiam! Dolorem, harum? sapiente.
+          </p>
+          <a href="#"
+            >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+          ></a>
+          <i id="play" class="fa-solid fa-play"></i>
         </div>
       </div>
     </section>
