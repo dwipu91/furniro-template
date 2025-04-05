@@ -83,13 +83,13 @@ li {
 ul {
   padding: 0;
 }
-header,
+/* header,
 section,
 footer {
   width: 1244px;
   margin: 0 auto;
   padding: 0 1.4rem;
-}
+} */
 section {
   padding: 1rem 1.4rem;
 }
@@ -113,17 +113,29 @@ section {
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
 }
+.btn:hover {
+  background: linear-gradient(to right, #e97171, #2ec1ac);
+}
+
 .btn-w {
-  border: none;
+  font-weight: bold;
   color: var(--color-text);
   padding: 0.8rem 3rem;
   background-color: var(--white);
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
 }
-
+.btn-w:hover {
+  background: linear-gradient(to right, #e97171, #2ec1ac);
+  border: 1px solid liner-gradient(to right, #e97171, #2ec1ac);
+  color: white;
+}
 .off {
   padding: 0.6rem;
   border-radius: 2rem;
@@ -155,4 +167,16 @@ section {
   width: 100%;
   font-size: 0.7rem;
   text-align: center;
+}
+.show-btn {
+  border: 0.1rem solid var(--color-text);
+  color: var(--color-text);
+  padding: 1rem 3.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.show-btn:hover {
+  background-color: var(--color-text);
+  color: var(--white);
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section replicat</title>
+    <style>
+      :root {
+        --primary-color: #121111;
+        --secondary-color: #3e3e3dad;
+        --tertiary-color: #f1f1f1;
+        --quaternary-color: #e5e5e5;
+        --btn-blue: blue;
+        --btn-green: green;
+        --btn-red: red;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: var(--secondary-color);
+      }
+      section {
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 60%;
+        margin: auto;
+        height: 100vh;
+        padding: 10rem;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10rem;
+      }
+      .box-one {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        color: var(--quaternary-color);
+      }
+      button {
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        border: 1px solid var(--tertiary-color);
+        padding: 0.2rem;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+      }
+      .box-icon i {
+        font-size: 10rem;
+        color: var(--quaternary-color);
+        font-size: 5rem;
+      }
+      .box-one i {
+        transform: rotate(180deg);
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="box-icon">
+          <i class="fa fa-smile" aria-hidden="true"></i>
+        </div>
+        <div class="box-one">
+          <button>primary</button>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            incidunt eligendi omnis sint maiores nemo repellat architecto
+            dolorum iste adipisci officiis expedita officia suscipit consectetur
+            amet quibusdam aperiam! Dolorem, harum? Quam tempora ratione
+            perferendis atque illum? Ea aut libero iste? Aut laborum
+            accusantium, quisquam deserunt aliquam quae mollitia beatae minus et
+            officiis adipisci maiores natus voluptatum iure praesentium sunt
+            sapiente.
+          </p>
+          <a href="#"
+            >Read more <i class="fa fa-arrow-right" aria-hidden="true"></i
+          ></a>
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
